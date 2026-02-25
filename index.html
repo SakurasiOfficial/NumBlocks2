@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num Blocks | Official Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="icon.png">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #050505; }
+        .swiper { width: 100%; max-width: 300px; padding-top: 50px; padding-bottom: 50px; }
+        .swiper-slide { background-position: center; background-size: cover; width: 280px; height: 500px; border-radius: 20px; background-color: #1a1a1a; border: 2px solid #333; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .glass-nav { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="text-gray-100">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="cube.png" alt="Cube Logo" class="w-6 h-6 object-contain">
+                
+                <span class="font-black text-xl tracking-tighter uppercase">Num Blocks</span>
+            </div>
+            <a href="#download" class="md:block hidden bg-white text-black px-4 py-2 rounded-lg text-sm font-bold hover:bg-indigo-500 hover:text-white transition">СКАЧАТЬ</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight italic uppercase">
+            Твои правила — <br><span class="text-indigo-500">Твои блоки</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto mb-10">
+            Затягивающий 2D-пазл, где каждый ход имеет значение. Простая графика, глубокий геймплей.
+        </p>
+    </section>
+
+    <section class="py-10 bg-white/5">
+        <h2 class="text-center text-2xl font-bold mb-8 uppercase tracking-widest">Скриншоты игры</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow-2xl shadow-indigo-500/20">
+                   <div class="flex flex-col items-center">
+                       <span class="material-icons text-6xl text-gray-700">image</span>
+                       <p class="text-xs text-gray-500 mt-2">Screen 1</p>
+                   </div>
+                </div>
+                <div class="swiper-slide shadow-2xl shadow-indigo-500/20">
+                    <div class="flex flex-col items-center">
+                        <span class="material-icons text-6xl text-gray-700">image</span>
+                        <p class="text-xs text-gray-500 mt-2">Screen 2</p>
+                    </div>
+                </div>
+                <div class="swiper-slide shadow-2xl shadow-indigo-500/20">
+                    <div class="flex flex-col items-center">
+                        <span class="material-icons text-6xl text-gray-700">image</span>
+                        <p class="text-xs text-gray-500 mt-2">Screen 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="py-24 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div class="flex gap-4">
+            <span class="material-icons text-indigo-500 text-4xl">aspect_ratio</span>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Чистое 2D</h3>
+                <p class="text-gray-400">Классический плоский интерфейс, который не нагружает телефон и выглядит стильно.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <span class="material-icons text-indigo-500 text-4xl">bolt</span>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Быстрый старт</h3>
+                <p class="text-gray-400">Никакого долгого обучения. Зашел, сбросил блоки, поставил рекорд.</p>
+            </div>
+        </div>
+    </section>
+
+<section class="py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-black mb-16 text-center uppercase tracking-tighter">Разработка</h2>
+            <div class="flex flex-wrap justify-center gap-12">
+                <div class="text-center w-64 group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-indigo-600 rounded-2xl flex items-center justify-center transform rotate-3 shadow-lg shadow-indigo-500/20 transition-transform group-hover:scale-110">
+                        <span class="material-icons text-white text-3xl">architecture</span>
+                    </div>
+                    <h4 class="text-xl font-bold">Sakurasi</h4>
+                    <p class="text-indigo-400 text-sm mb-2 font-medium uppercase tracking-wider">Lead Designer</p>
+                    <p class="text-gray-500 text-xs px-4">Главный архитектор проекта: от первого макета интерфейса до финального визуального стиля и UX.</p>
+                </div>
+
+                <div class="text-center w-64 group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-fuchsia-500 rounded-2xl flex items-center justify-center transform -rotate-3 shadow-lg shadow-fuchsia-500/30 transition-transform group-hover:scale-110">
+                        <span class="material-icons text-white text-3xl">code</span>
+                    </div>
+                    <h4 class="text-xl font-bold">Yarik ChitoCoder</h4>
+                    <p class="text-fuchsia-400 text-sm mb-2 font-medium uppercase tracking-wider">Lead Programmer</p>
+                    <p class="text-gray-500 text-xs px-4">Разработчик игрового пространства. Мастер оптимизации, ответственный за чистый код и уничтожение багов на корню.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto bg-indigo-600 rounded-[3rem] p-12 relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl font-black mb-6 uppercase">Готов начать?</h2>
+                <a href="#" class="inline-flex items-center gap-3 bg-black text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition">
+                    <span class="material-icons">smart_display</span> Скачать для Android
+                </a>
+            </div>
+            <span class="material-icons absolute -bottom-10 -right-10 text-[15rem] text-black/10">install_mobile</span>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-600 text-xs border-t border-white/5">
+        <p>Project Num Blocks &copy; 2026 | Designed by Sakurasi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+</html>
